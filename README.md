@@ -9,7 +9,7 @@ Find who I am, what I do, what my skill sets are, and ways to connect with me : 
 ## Skill Set
 
 <a href="https://devneolee.github.io/JustinKLee/" >
-<img src="images/skillset_screenshot.png" alt="skillset_screenshot" style="display: block; margin: auto; width: 50% 500" /></a>
+<img src="images/skillset_screenshot.png" alt="skillset_screenshot" style="display: block; margin: auto; width: 50% 300" /></a>
 
 
 ## License 
