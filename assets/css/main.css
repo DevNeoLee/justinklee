@@ -3425,10 +3425,10 @@ input, select, textarea {
 			margin: 5rem 0 0 0;
 		}
 
-			#wrapper section > header {
-				padding: 0 10rem 0 5rem;
-				width: 35rem;
-			}
+					#wrapper section > header {
+			padding: 0 10rem 0 5rem;
+			width: 50rem;
+		}
 
 			#wrapper section > .content {
 				padding: 0 5rem;
@@ -3457,11 +3457,11 @@ input, select, textarea {
 		}
 
 			#wrapper > section > .content > section > header {
-				width: 32rem;
+				width: 45rem;
 			}
 
 		#wrapper > section.intro > header > * {
-			width: 20rem;
+			width: 35rem;
 		}
 
 		#wrapper > section.intro > header:before {
@@ -3931,3 +3931,8 @@ input, select, textarea {
 				max-width: 100%;
 			}
 		}
+
+	/* Section header width */
+	#wrapper > section > header {
+		width: 100%;
+	}
