@@ -27,6 +27,9 @@
 			}, 100);
 		});
 
+	// Set current year in copyright
+		$('#current-year').text(new Date().getFullYear());
+
 	// Hack: Enable IE workarounds.
 		if (browser.name == 'ie')
 			$body.addClass('is-ie');
