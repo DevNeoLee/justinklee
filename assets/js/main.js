@@ -1,74 +1,27 @@
-/*
-	Paradigm Shift by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+/**
+ * Minimal script for static portfolio page.
+ * - Remove is-preload after load (enables transition)
+ * - Set current year in footer
+ * - Add is-mobile class for CSS background tweaks on small screens
+ */
+(function () {
+	'use strict';
 
-(function($) {
+	// Remove preload class after load so CSS transitions can run
+	window.addEventListener('load', function () {
+		setTimeout(function () {
+			document.body.classList.remove('is-preload');
+		}, 100);
+	});
 
-	var	$window = $(window),
-		$body = $('body');
+	// Current year in copyright
+	var yearEl = document.getElementById('current-year');
+	if (yearEl) {
+		yearEl.textContent = new Date().getFullYear();
+	}
 
-	// Breakpoints.
-		breakpoints({
-			default:   ['1681px',   null       ],
-			xlarge:    ['1281px',   '1680px'   ],
-			large:     ['981px',    '1280px'   ],
-			medium:    ['737px',    '980px'    ],
-			small:     ['481px',    '736px'    ],
-			xsmall:    ['361px',    '480px'    ],
-			xxsmall:   [null,       '360px'    ]
-		});
-
-	// Play initial animations on page load.
-		$window.on('load', function() {
-			window.setTimeout(function() {
-				$body.removeClass('is-preload');
-			}, 100);
-		});
-
-	// Set current year in copyright
-		$('#current-year').text(new Date().getFullYear());
-
-	// Hack: Enable IE workarounds.
-		if (browser.name == 'ie')
-			$body.addClass('is-ie');
-
-	// Mobile?
-		if (browser.mobile)
-			$body.addClass('is-mobile');
-
-	// Scrolly.
-		$('.scrolly')
-			.scrolly({
-				offset: 100
-			});
-
-	// Polyfill: Object fit.
-		if (!browser.canUse('object-fit')) {
-
-			$('.image[data-position]').each(function() {
-
-				var $this = $(this),
-					$img = $this.children('img');
-
-				// Apply img as background.
-					$this
-						.css('background-image', 'url("' + $img.attr('src') + '")')
-						.css('background-position', $this.data('position'))
-						.css('background-size', 'cover')
-						.css('background-repeat', 'no-repeat');
-
-				// Hide img.
-					$img
-						.css('opacity', '0');
-
-			});
-
-
-
-		}
-
-
-
-})(jQuery);
+	// Mobile: add class so CSS can use scroll instead of fixed background
+	if (window.matchMedia('(max-width: 1152px)').matches) {
+		document.body.classList.add('is-mobile');
+	}
+})();

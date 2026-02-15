@@ -71,6 +71,8 @@ input, textarea {
 
 	html {
 		box-sizing: border-box;
+		scroll-behavior: smooth;
+		scroll-padding-top: 100px;
 	}
 
 	*, *:before, *:after {
@@ -834,83 +836,83 @@ input, textarea {
 			grid-template-rows: 1fr;
 		}
 
-			#wrapper section:first-child {
-				margin-top: 0;
-			}
+		#wrapper section:first-child {
+			margin-top: 0;
+		}
 
-			#wrapper section > header {
-				grid-area: header;
-				justify-self: end;
-				text-align: right;
-			}
+		#wrapper section > header {
+			grid-area: header;
+			justify-self: end;
+			text-align: right;
+		}
 
-				#wrapper section > header h2 {
-					margin: 0 0 5rem 0;
-				}
+		#wrapper section > header h2 {
+			margin: 0 0 5rem 0;
+		}
 
-				#wrapper section > header h1 + p {
-					font-family: "Raleway", Helvetica, sans-serif;
-					font-size: 0.8rem;
-					letter-spacing: 0.175em;
-					line-height: 2.5;
-					text-transform: uppercase;
-				}
+		#wrapper section > header h1 + p {
+			font-family: "Raleway", Helvetica, sans-serif;
+			font-size: 0.8rem;
+			letter-spacing: 0.175em;
+			line-height: 2.5;
+			text-transform: uppercase;
+		}
 
-				#wrapper section > header ul.actions {
-					justify-content: flex-end;
-				}
+		#wrapper section > header ul.actions {
+			justify-content: flex-end;
+		}
 
-			#wrapper section > .content {
-				grid-area: content;
-				max-width: 60rem;
-				position: relative;
-			}
+		#wrapper section > .content {
+			grid-area: content;
+			max-width: 60rem;
+			position: relative;
+		}
 
-			#wrapper section > footer {
-				grid-area: footer;
-				text-align: right;
-			}
+		#wrapper section > footer {
+			grid-area: footer;
+			text-align: right;
+		}
 
-				#wrapper section > footer ul.actions {
-					justify-content: flex-end;
-				}
+		#wrapper section > footer ul.actions {
+			justify-content: flex-end;
+		}
 
 		#wrapper > section {
 			position: relative;
 		}
 
-			#wrapper > section > header:before {
+		#wrapper > section > header:before {
+			background: #43d9b8;
+			content: '';
+			display: block;
+			margin-top: 1rem;
+			position: absolute;
+			width: 2px;
+		}
+
+		#wrapper > section > header h1, #wrapper > section > header h2 {
+			position: relative;
+		}
+
+			#wrapper > section > header h1:before, #wrapper > section > header h2:before {
 				background: #43d9b8;
 				content: '';
 				display: block;
-				margin-top: 1rem;
+				height: 2px;
 				position: absolute;
-				width: 2px;
+				top: 1rem;
 			}
 
-			#wrapper > section > header h1, #wrapper > section > header h2 {
-				position: relative;
+			#wrapper > section > header h1:after, #wrapper > section > header h2:after {
+				background: #43d9b8;
+				border-radius: 0.5rem;
+				content: '';
+				display: block;
+				height: 0.5rem;
+				position: absolute;
+				top: 0.75rem;
+				width: 0.5rem;
 			}
-
-				#wrapper > section > header h1:before, #wrapper > section > header h2:before {
-					background: #43d9b8;
-					content: '';
-					display: block;
-					height: 2px;
-					position: absolute;
-					top: 1rem;
-				}
-
-				#wrapper > section > header h1:after, #wrapper > section > header h2:after {
-					background: #43d9b8;
-					border-radius: 0.5rem;
-					content: '';
-					display: block;
-					height: 0.5rem;
-					position: absolute;
-					top: 0.75rem;
-					width: 0.5rem;
-				}
 
 			#wrapper > section > header h1 {
 				margin-top: -2rem;
@@ -1442,38 +1444,6 @@ input, textarea {
 			}
 
 		}
-
-	body.is-ie #wrapper section {
-		display: flex;
-		flex-wrap: wrap;
-	}
-
-		body.is-ie #wrapper section > header {
-			width: 50%;
-		}
-
-		body.is-ie #wrapper section > .content {
-			width: 50%;
-		}
-
-		body.is-ie #wrapper section > footer {
-			width: 50%;
-			text-align: left;
-			margin-left: 50%;
-			padding: 5rem;
-		}
-
-	body.is-ie #wrapper > section > .content > section {
-		width: 100vw;
-	}
-
-	@media screen and (max-width: 1280px) {
-
-		body.is-ie #wrapper section > footer {
-			padding: 4rem;
-		}
-
-	}
 
 	/* Project Images */
 	.project-image {
