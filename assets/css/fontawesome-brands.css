@@ -1,0 +1,27 @@
+/* Font Awesome 5 Brands – minimal subset for footer icons only (LinkedIn, GitHub, AngelList) */
+.fa,
+.fab {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	display: inline-block;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	line-height: 1;
+}
+
+@font-face {
+	font-family: "Font Awesome 5 Brands";
+	font-style: normal;
+	font-weight: normal;
+	font-display: auto;
+	src: url(../webfonts/fa-brands-400.svg#fontawesome) format("svg");
+}
+
+.fab {
+	font-family: "Font Awesome 5 Brands";
+}
+
+.fa-linkedin-in:before { content: "\f0e1"; }
+.fa-github:before { content: "\f09b"; }
+.fa-angellist:before { content: "\f209"; }
