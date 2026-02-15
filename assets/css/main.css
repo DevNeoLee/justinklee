@@ -21,6 +21,22 @@ body {
 	-webkit-text-size-adjust: none;
 }
 
+/* Skip link: visible on focus for keyboard/screen reader users */
+.skip-link {
+	position: absolute;
+	top: -3rem;
+	left: 0;
+	padding: 0.5rem 1rem;
+	background: #000;
+	color: #fff;
+	text-decoration: none;
+	z-index: 10001;
+	transition: top 0.2s;
+}
+.skip-link:focus {
+	top: 0;
+}
+
 ul {
 	list-style: none;
 }
@@ -70,6 +86,7 @@ input, textarea {
 	}
 
 	body {
+		position: relative;
 		background-color: #ffffff;
 		color: #000000;
 		overflow-x: hidden;
@@ -151,6 +168,11 @@ input, textarea {
 	strong, b {
 		font-weight: 600;
 		color: #000000;
+	}
+
+	/** Utility: section subheadings (replaces inline font-size) */
+	strong.subheading {
+		font-size: 1.25rem;
 	}
 
 	em, i {

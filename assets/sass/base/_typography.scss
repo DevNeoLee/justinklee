@@ -57,6 +57,10 @@
 		color: _palette(fg-bold);
 	}
 
+	strong.subheading {
+		font-size: 1.25rem;
+	}
+
 	em, i {
 		font-style: italic;
 	}

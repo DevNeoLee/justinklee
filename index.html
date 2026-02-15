@@ -11,11 +11,14 @@
 	<meta name="description" content="Full Stack Engineer Justin K Lee - Portfolio showcasing web applications and development skills" />
 	<meta name="keywords" content="full stack developer, react, ruby on rails, javascript, typescript" />
 	<link rel="icon" href="images/Vectorfinalplane.svg" type="image/x-icon" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link rel="preconnect" href="https://code.iconify.design" />
 	<link rel="stylesheet" href="assets/css/main.css" />
-	<script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
 </head>
 
 <body class="is-preload">
+	<a href="#first" class="skip-link">Skip to main content</a>
 
 	<!-- Wrapper -->
 	<div id="wrapper">
@@ -44,7 +47,7 @@
 				<h2>Who I am</h2>
 			</header>
 			<div class="content">
-				<p><strong style="font-size: 1.25rem">Full Stack Developer</strong> I’m a Full‑Stack Developer with more than four years of professional experience contributing to scalable internal business systems as part of agile, cross-functional teams. I enjoy solving complex problems with clean, efficient code. I’m especially drawn to AI and emerging technologies and bring that curiosity into my work—exploring new tools and patterns to improve development processes and user experience.
+				<p><strong class="subheading">Full Stack Developer</strong> I’m a Full‑Stack Developer with more than four years of professional experience contributing to scalable internal business systems as part of agile, cross-functional teams. I enjoy solving complex problems with clean, efficient code. I’m especially drawn to AI and emerging technologies and bring that curiosity into my work—exploring new tools and patterns to improve development processes and user experience.
 
 </p><p>Outside of work, I recharge by spending time with family, hiking scenic trails, and visiting museums wherever I travel. These moments help me stay curious, grounded, and creatively inspired.
 
@@ -60,7 +63,7 @@
 				<h2>Main Skill Set</h2>
 			</header>
 			<div class="content">
-				<p><strong style="font-size: 1.25rem">TOOLS</strong></p>
+				<p><strong class="subheading">TOOLS</strong></p>
 				<ul class="feature-icons">
 					<li><span class="iconify" data-icon="devicon:nextjs"></span>NextJS</li>
 					<li><span class="iconify" data-icon="logos:typescript-icon"></span>TypeScript</li>
@@ -122,7 +125,7 @@
 					<div class="content">
 						<div class="project-image">
 							<a href="https://sharedesk1.onrender.com/" target="_blank" rel="noopener">
-								<img src="images/share_desk.gif" alt="Share Desk app demo" />
+								<img src="images/share_desk.gif" alt="Share Desk app demo" loading="lazy" width="800" height="450" />
 							</a>
 						</div>
 						<div><a href="https://sharedesk1.onrender.com/" target="_blank" rel="noopener">
@@ -146,7 +149,7 @@ A fully responsive, single-page e‑commerce application designed for premium mo
 					<div class="content">
 						<div class="project-image">
 							<a href="https://collectors2025.vercel.app/" target="_blank" rel="noopener">
-								<img src="images/collectorsGif2025.gif" alt="Collectors e-commerce app demo" />
+								<img src="images/collectorsGif2025.gif" alt="Collectors e-commerce app demo" loading="lazy" width="800" height="450" />
 							</a>
 						</div>
 						<div><a href="https://collectors2025.vercel.app/" target="_blank" rel="noopener">
@@ -170,7 +173,7 @@ A fully responsive, single-page e‑commerce application designed for premium mo
 					<div class="content">
 						<div class="project-image">
 							<a href="https://d3-canada-tourist2025.vercel.app" target="_blank" rel="noopener">
-								<img src="images/travel_data_d3.gif" alt="Canada tourist data visualization demo" />
+								<img src="images/travel_data_d3.gif" alt="Canada tourist data visualization demo" loading="lazy" width="800" height="450" />
 							</a>
 						</div>
 						<div><a href="https://d3-canada-tourist2025.vercel.app/" target="_blank" rel="noopener">
@@ -190,16 +193,19 @@ A fully responsive, single-page e‑commerce application designed for premium mo
 				<h2>Get in Touch</h2>
 			</header>
 			<div class="content">
-				<p><strong style="font-size: 1.25rem">Leave me a message</strong></p>
+				<p><strong class="subheading">Leave me a message</strong></p>
 				<form action="https://formspree.io/xknrvzqv" method="POST">
 					<div class="fields">
 						<div class="field half">
+							<label for="name">Name</label>
 							<input type="text" name="name" id="name" placeholder="Name" required />
 						</div>
 						<div class="field half">
+							<label for="email">Email</label>
 							<input type="email" name="email" id="email" placeholder="Email" required />
 						</div>
 						<div class="field">
+							<label for="message">Message</label>
 							<textarea name="message" id="message" placeholder="Message" rows="7" required></textarea>
 						</div>
 					</div>
@@ -242,7 +248,8 @@ A fully responsive, single-page e‑commerce application designed for premium mo
 		</div>
 	</div>
 
-	<!-- Scripts -->
+	<!-- Scripts: Iconify deferred so it does not block initial paint -->
+	<script src="https://code.iconify.design/1/1.0.4/iconify.min.js" defer></script>
 	<script src="assets/js/main.js"></script>
 
 </body>
