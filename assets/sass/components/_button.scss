@@ -47,39 +47,7 @@
 			color: _palette(accent-alt) !important;
 		}
 
-		&.small {
-			font-size: 0.5rem;
-			height: _size(element-height) * 0.75;
-			line-height: _size(element-height) * 0.75;
-			padding: 0 1.25rem;
-		}
-
-		&.large {
-			font-size: 0.7rem;
-			height: _size(element-height) * 1.0875;
-			line-height: _size(element-height) * 1.0875;
-			padding: 0 3.25rem;
-		}
-
-		&.wide {
-			min-width: 13rem;
-		}
-
-		&.icon {
-			&:before {
-				margin-right: 0.5rem;
-			}
-		}
-
-		&.fit {
-			width: 100%;
-		}
-
-		&.disabled,
-		&:disabled {
-			@include vendor('pointer-events', 'none');
-			opacity: 0.25;
-		}
+		// .small, .large, .wide, .icon, .fit, .disabled not used in site
 
 		&.primary {
 			background-color: _palette(accent);
@@ -99,17 +67,5 @@
 			font-size: 0.7rem;
 			height: (_size(element-height) * 1.1);
 			line-height: (_size(element-height) * 1.1);
-
-			&.large {
-				font-size: 0.8rem;
-				height: _size(element-height) * 1.25;
-				line-height: _size(element-height) * 1.25;
-			}
-
-			&.small {
-				font-size: 0.6rem;
-				height: (_size(element-height) * 1);
-				line-height: (_size(element-height) * 1);
-			}
 		}
 	}

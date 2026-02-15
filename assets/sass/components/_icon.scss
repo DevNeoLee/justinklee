@@ -15,11 +15,7 @@
 			display: none;
 		}
 
-		&.solid {
-			&:before {
-				font-weight: 900;
-			}
-		}
+		// .solid not used in site (footer uses .brands only)
 
 		&.brands {
 			&:before {

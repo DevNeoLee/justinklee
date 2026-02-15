@@ -3,18 +3,9 @@
 /// html5up.net | @ajlkn
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
+/// Trimmed: only ul and ul.items are used; ol, ul.alt, dl/dt/dd removed.
 
 /* List */
-
-	ol {
-		list-style: decimal;
-		margin: 0 0 _size(element-margin) 0;
-		padding-left: 1.25rem;
-
-		li {
-			padding-left: 0.25rem;
-		}
-	}
 
 	ul {
 		list-style: disc;
@@ -23,25 +14,6 @@
 
 		li {
 			padding-left: 0.325rem;
-		}
-
-		&.alt {
-			list-style: none;
-			padding-left: 0;
-
-			> li {
-				border-top: solid 1px _palette(border);
-				padding: 0.75rem 0;
-
-				&:first-child {
-					border-top: 0;
-					padding-top: 0;
-				}
-
-				&:last-child {
-					padding-bottom: 0;
-				}
-			}
 		}
 
 		&.items {
@@ -72,19 +44,5 @@
 					margin: 0 0 (_size(element-margin) * 1) 0;
 				}
 			}
-		}
-	}
-
-	dl {
-		margin: 0 0 _size(element-margin) 0;
-
-		dt {
-			display: block;
-			font-weight: _font(weight-bold);
-			margin: 0 0 (_size(element-margin) * 0.5) 0;
-		}
-
-		dd {
-			margin-left: (_size(element-margin) * 0.75);
 		}
 	}

@@ -65,7 +65,7 @@
 		margin: 0 0 _size(element-margin) 0;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
+	h1, h2, h3, h4 {
 		color: _palette(fg-bold);
 		font-family: _font(family-heading);
 		font-weight: _font(weight-heading-light);
@@ -104,13 +104,7 @@
 		font-size: 0.875rem;
 	}
 
-	h5 {
-		font-size: 0.75rem;
-	}
-
-	h6 {
-		font-size: 0.625rem;
-	}
+	// h5, h6 not used in site
 
 	@include breakpoint('<=small') {
 		h1 {
@@ -130,10 +124,6 @@
 		h4 {
 			font-size: 0.75rem;
 		}
-
-		h5 {
-			font-size: 0.675rem;
-		}
 	}
 
 	@include breakpoint('<=xxsmall') {
@@ -152,67 +142,6 @@
 		h4 {
 			font-size: 0.675rem;
 		}
-
-		h5 {
-			font-size: 0.675rem;
-		}
 	}
 
-	sub {
-		font-size: 0.8rem;
-		position: relative;
-		top: 0.5rem;
-	}
-
-	sup {
-		font-size: 0.8rem;
-		position: relative;
-		top: -0.5rem;
-	}
-
-	blockquote {
-		border-left: solid 0.5rem _palette(border);
-		font-style: italic;
-		margin: 0 0 _size(element-margin) 0;
-		padding: (_size(element-margin) * 0.5) 0 (_size(element-margin) * 0.5) _size(element-margin);
-	}
-
-	code {
-		background: _palette(border-bg);
-		border-radius: _size(border-radius);
-		font-family: _font(family-fixed);
-		font-size: 0.9rem;
-		margin: 0 0.25rem;
-		padding: 0.25rem 0.65rem;
-	}
-
-	pre {
-		-webkit-overflow-scrolling: touch;
-		font-family: _font(family-fixed);
-		font-size: 0.9rem;
-		margin: 0 0 _size(element-margin) 0;
-		width: 100%;
-
-		code {
-			display: block;
-			line-height: 1.75;
-			padding: 1rem 1.5rem;
-			overflow-x: auto;
-		}
-	}
-
-	hr {
-		border: 0;
-		border-bottom: solid 2px _palette(border);
-		margin: (_size(element-margin) * 1.5) 0;
-
-		&.major {
-			margin: (_size(element-margin) * 2.5) 0;
-		}
-
-		@include breakpoint('<=small') {
-			&.major {
-				margin: (_size(element-margin) * 1.5) 0;
-			}
-		}
-	}
+	// sub, sup, blockquote, code, pre, hr not used in site
