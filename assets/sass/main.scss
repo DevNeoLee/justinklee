@@ -3,9 +3,8 @@
 @import 'libs/mixins';
 @import 'libs/vendor';
 @import 'libs/breakpoints';
-@import 'libs/html-grid';
 @import 'fontawesome-all.min.css';
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,700,300i,600i,700i|Raleway:600,800');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700|Raleway:600,800');
 
 /*
 	Paradigm Shift by HTML5 UP
@@ -33,8 +32,6 @@
 
 // Component.
 
-	@import 'components/row';
-	@import 'components/box';
 	@import 'components/button';
 	@import 'components/form';
 	@import 'components/icon';
@@ -42,7 +39,6 @@
 	@import 'components/list';
 	@import 'components/actions';
 	@import 'components/icons';
-	@import 'components/table';
 	@import 'components/arrow';
 	@import 'components/feature-icons';
 

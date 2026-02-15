@@ -1,11 +1,7 @@
 @import url(fontawesome-all.min.css);
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,700,300i,600i,700i|Raleway:600,800");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700|Raleway:600,800");
 
-/*
-	Paradigm Shift by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+/* Paradigm Shift by HTML5 UP (html5up.net) | CCA 3.0 license */
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -25,34 +21,17 @@ section, summary, time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;}
 
-article, aside, details, figcaption, figure,f
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
 body {
 	line-height: 1;
+	-webkit-text-size-adjust: none;
 }
 
 ol, ul {
 	list-style: none;
-}
-
-blockquote, q {
-	quotes: none;
-}
-
-	blockquote:before, blockquote:after, q:before, q:after {
-		content: '';
-		content: none;
-	}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-body {
-	-webkit-text-size-adjust: none;
 }
 
 mark {
@@ -65,7 +44,7 @@ input::-moz-focus-inner {
 	padding: 0;
 }
 
-input, select, textarea {
+input, textarea {
 	-moz-appearance: none;
 	-webkit-appearance: none;
 	-ms-appearance: none;
@@ -103,7 +82,8 @@ input, select, textarea {
 	}
 
 	body {
-		background: #ffffff;
+		background-color: #ffffff;
+		color: #000000;
 		overflow-x: hidden;
 	}
 
@@ -156,12 +136,7 @@ input, select, textarea {
 
 		}
 
-	body {
-		background-color: #ffffff;
-		color: #000000;
-	}
-
-	body, input, select, textarea {
+	body, input, textarea {
 		color: #000000;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 1rem;
@@ -239,14 +214,6 @@ input, select, textarea {
 		font-size: 1rem;
 	}
 
-	h5 {
-		font-size: 0.75rem;
-	}
-
-	h6 {
-		font-size: 0.625rem;
-	}
-
 	@media screen and (max-width: 736px) {
 
 		h1 {
@@ -267,10 +234,6 @@ input, select, textarea {
 			font-size: 0.75rem;
 		}
 
-		h5 {
-			font-size: 0.675rem;
-		}
-
 	}
 
 	@media screen and (max-width: 360px) {
@@ -288,10 +251,6 @@ input, select, textarea {
 		}
 
 		h4 {
-			font-size: 0.675rem;
-		}
-
-		h5 {
 			font-size: 0.675rem;
 		}
 
@@ -459,12 +418,7 @@ input, select, textarea {
 		}
 
 	input[type="text"],
-	input[type="password"],
 	input[type="email"],
-	input[type="tel"],
-	input[type="search"],
-	input[type="url"],
-	select,
 	textarea {
 		-moz-appearance: none;
 		-webkit-appearance: none;
@@ -480,24 +434,8 @@ input, select, textarea {
 		width: 100%;
 	}
 
-		input[type="text"]:invalid,
-		input[type="password"]:invalid,
-		input[type="email"]:invalid,
-		input[type="tel"]:invalid,
-		input[type="search"]:invalid,
-		input[type="url"]:invalid,
-		select:invalid,
-		textarea:invalid {
-			box-shadow: none;
-		}
-
 		input[type="text"]:focus,
-		input[type="password"]:focus,
 		input[type="email"]:focus,
-		input[type="tel"]:focus,
-		input[type="search"]:focus,
-		input[type="url"]:focus,
-		select:focus,
 		textarea:focus {
 			border-color: #2ee4bb;
 		}
@@ -515,11 +453,7 @@ input, select, textarea {
 	}
 
 	input[type="text"],
-	input[type="password"],
-	input[type="email"],
-	input[type="tel"],
-	input[type="search"],
-	input[type="url"] {
+	input[type="email"] {
 		height: 3rem;
 	}
 
@@ -555,46 +489,16 @@ input, select, textarea {
 
 	}
 
-	@media screen and (max-width: 360px) {
-
-		label {
-			font-size: 0.675rem;
-		}
-
-	}
-
 /* Icon */
 
 	.iconify {
+		display: inline-block;
+		width: 5em;
+		height: 4em;
 		text-decoration: none;
 		border-bottom: none;
 		position: relative;
-		/* width: 50px; */
-		height: 4em;
 	}
-	.iconify  {
-			display: inline-block;
-			width: 5em;
-			
-		}
-
-		.iconify:before {
-			-moz-osx-font-smoothing: grayscale;
-			-webkit-font-smoothing: antialiased;
-			display: inline-block;
-			font-style: normal;
-			font-variant: normal;
-			text-rendering: auto;
-			line-height: 1;
-			text-transform: none !important;
-			font-family: 'Font Awesome 5 Free';
-			font-weight: 400;
-		}
-		.iconify.solid:before {
-			font-weight: 900;
-		}
-
-	
 
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
@@ -611,10 +515,6 @@ input, select, textarea {
 
 		.icon > .label {
 			display: none;
-		}
-
-		.icon.solid:before {
-			font-weight: 900;
 		}
 
 		.icon.brands:before {
@@ -646,95 +546,11 @@ input, select, textarea {
 			height: 100%;
 		}
 
-		.image[data-position="top left"] img {
-			-moz-object-position: top left;
-			-webkit-object-position: top left;
-			-ms-object-position: top left;
-			object-position: top left;
-		}
-
-		.image[data-position="top"] img {
-			-moz-object-position: top;
-			-webkit-object-position: top;
-			-ms-object-position: top;
-			object-position: top;
-		}
-
-		.image[data-position="top right"] img {
-			-moz-object-position: top right;
-			-webkit-object-position: top right;
-			-ms-object-position: top right;
-			object-position: top right;
-		}
-
-		.image[data-position="right"] img {
-			-moz-object-position: right;
-			-webkit-object-position: right;
-			-ms-object-position: right;
-			object-position: right;
-		}
-
-		.image[data-position="bottom right"] img {
-			-moz-object-position: bottom right;
-			-webkit-object-position: bottom right;
-			-ms-object-position: bottom right;
-			object-position: bottom right;
-		}
-
-		.image[data-position="bottom"] img {
-			-moz-object-position: bottom;
-			-webkit-object-position: bottom;
-			-ms-object-position: bottom;
-			object-position: bottom;
-		}
-
-		.image[data-position="bottom left"] img {
-			-moz-object-position: bottom left;
-			-webkit-object-position: bottom left;
-			-ms-object-position: bottom left;
-			object-position: bottom left;
-		}
-
-		.image[data-position="left"] img {
-			-moz-object-position: left;
-			-webkit-object-position: left;
-			-ms-object-position: left;
-			object-position: left;
-		}
-
 		.image[data-position="center"] img {
 			-moz-object-position: center;
 			-webkit-object-position: center;
 			-ms-object-position: center;
 			object-position: center;
-		}
-
-		.image[data-position="25% 25%"] img {
-			-moz-object-position: 25% 25%;
-			-webkit-object-position: 25% 25%;
-			-ms-object-position: 25% 25%;
-			object-position: 25% 25%;
-		}
-
-		.image[data-position="75% 25%"] img {
-			-moz-object-position: 75% 25%;
-			-webkit-object-position: 75% 25%;
-			-ms-object-position: 75% 25%;
-			object-position: 75% 25%;
-		}
-
-		.image[data-position="75% 75%"] img {
-			-moz-object-position: 75% 75%;
-			-webkit-object-position: 75% 75%;
-			-ms-object-position: 75% 75%;
-			object-position: 75% 75%;
-		}
-
-		.image[data-position="25% 75%"] img {
-			-moz-object-position: 25% 75%;
-			-webkit-object-position: 25% 75%;
-			-ms-object-position: 25% 75%;
-			object-position: 25% 75%;
 		}
 
 		.image.main {
@@ -872,25 +688,11 @@ input, select, textarea {
 						width: 100%;
 					}
 
-						ul.actions:not(.fixed) li input[type="submit"].icon:before,
-						ul.actions:not(.fixed) li input[type="reset"].icon:before,
-						ul.actions:not(.fixed) li input[type="button"].icon:before,
-						ul.actions:not(.fixed) li button.icon:before,
-						ul.actions:not(.fixed) li .button.icon:before {
-							margin-left: -0.5rem;
-						}
-
 		}
 
 /* Icons */
 
-	ul li.icon {
-		cursor: default;
-		list-style: none;
-		padding: 1rem 1rem  ;
-	}
-
-		ul.icons li {
+	ul.icons li {
 			display: inline-block;
 			padding: 1rem 0.5rem;
 		}
