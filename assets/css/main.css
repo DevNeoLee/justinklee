@@ -3460,8 +3460,11 @@ input, select, textarea {
 				width: 45rem;
 			}
 
+		/* Keep intro text block inside left column; never let it cross the divider into the photo.
+		   Content area = 50vw minus header padding (5rem + 10rem); use 17rem for a small buffer. */
 		#wrapper > section.intro > header > * {
 			width: 35rem;
+			max-width: calc(50vw - 17rem);
 		}
 
 		#wrapper > section.intro > header:before {
@@ -3533,8 +3536,10 @@ input, select, textarea {
 						width: 30rem;
 					}
 
+				/* Same constraint at 1280px: content area = 50vw - 12rem padding; buffer so text stays away from photo. */
 				#wrapper > section.intro > header > * {
 					width: 21rem;
+					max-width: calc(50vw - 14rem);
 				}
 
 				#wrapper > section.intro > header:before {
@@ -3935,4 +3940,40 @@ input, select, textarea {
 	/* Section header width */
 	#wrapper > section > header {
 		width: 100%;
+	}
+
+	@media screen and (max-width: 2080px) {
+
+	
+		.mainMessage {
+			margin-right: 170px;
+		}
+
+	}
+
+	@media screen and (max-width: 1580px) {
+
+	
+		.mainMessage {
+			margin-right: 120px;
+		}
+
+	}
+
+	@media screen and (max-width: 780px) {
+
+	
+		.mainMessage {
+			margin-right: 120px;
+		}
+
+	}
+
+	@media screen and (max-width: 580px) {
+
+	
+		.mainMessage {
+			margin-right: 0px;
+		}
+
 	}
