@@ -42,17 +42,8 @@
 					}
 
 					input[type="submit"],
-					input[type="reset"],
-					input[type="button"],
-					button,
 					.button {
 						width: 100%;
-
-						&.icon {
-							&:before {
-								margin-left: -0.5rem;
-							}
-						}
 					}
 				}
 			}
