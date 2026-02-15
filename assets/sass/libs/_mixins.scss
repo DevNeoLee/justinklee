@@ -1,6 +1,7 @@
-/// Makes an element's :before pseudoelement a FontAwesome icon.
+/// Styles an element's :before pseudo-element (e.g. for icon placeholders).
+/// Icons on this site use Iconify, not Font Awesome.
 /// @param {string} $content Optional content value to use.
-/// @param {string} $category Optional category to use.
+/// @param {string} $category Optional (legacy, unused).
 /// @param {string} $where Optional pseudoelement to target (before or after).
 @mixin icon($content: false, $category: regular, $where: before) {
 
@@ -20,19 +21,7 @@
 		text-rendering: auto;
 		line-height: 1;
 		text-transform: none !important;
-
-		@if ($category == brands) {
-			font-family: 'Font Awesome 5 Brands';
-		}
-		@elseif ($category == solid) {
-			font-family: 'Font Awesome 5 Free';
-			font-weight: 900;
-		}
-		@else {
-			font-family: 'Font Awesome 5 Free';
-			font-weight: 400;
-		}
-
+		// Font Awesome removed; icons use Iconify
 	}
 
 }

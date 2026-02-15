@@ -15,11 +15,5 @@
 			display: none;
 		}
 
-		// .solid not used in site (footer uses .brands only)
-
-		&.brands {
-			&:before {
-				font-family: 'Font Awesome 5 Brands';
-			}
-		}
+		// Footer .brands uses Iconify (no Font Awesome)
 	}
