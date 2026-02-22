@@ -99,6 +99,7 @@ I design and implement LLM-driven features, automation workflows, and intelligen
 					
 					<li><span class="iconify" data-icon="logos:jquery"></span>JQuery</li>
 					<li><span class="iconify" data-icon="logos:d3"></span>D3</li>
+					<li><span class="iconify" data-icon="simple-icons:threedotjs"></span>Three.js</li>
 					<li><span class="iconify" data-icon="logos:css-3"></span>CSS3</li>
 					<li><span class="iconify" data-icon="logos:html-5"></span>HTML5</li>
 					<li><span class="iconify" data-icon="simple-icons:mui"></span>MUI</li>
@@ -118,6 +119,27 @@ I design and implement LLM-driven features, automation workflows, and intelligen
 				<h2>Works</h2>
 			</header>
 			<div class="content">
+				<section>
+				  <header>
+                <h3>Travelers to Canada AI</h3>
+                <p class="paragraph">A fully interactive data visualization dashboard built with TypeScript, D3.js, Three.js, and browser running custom LLM model, designed to showcase 20 years of Canadian tourism statistics within a single, responsive web page. The app combines modern web standards—modular TypeScript architecture, CSS Grid and Flexbox, scalable SVG graphics—with GPU-accelerated 3D (Three.js: idle plane and province hover fly-in, non-blocking on the main thread) and AI-powered chat so users can ask questions about the data and get answers even when offline.</p>
+                <p>LLM and prompting are central to the experience: when online, the Groq API answers with rich, contextual responses; when offline or as a fallback, a mini LLM runs entirely in the browser using transformers.js (no server required, model cached after first load). Careful prompting—system instructions, dataset context injected by year/month, and routing of casual vs. data questions—ensures the assistant uses only the app’s filtered dataset for statistics and stays friendly for greetings and follow-ups. Technical highlights include advanced D3.js charting (threshold, linear, and square-root scales), real-time data filtering, a Three.js 3D plane layer (GLB model, instanced fly-in to provinces), and a maintainable codebase with strict linting and strong type safety.</p>
+            </header>
+
+					<div class="content">
+						<div class="project-image">
+							<a href="https://d3-canada-tourist2025.vercel.app" target="_blank" rel="noopener">
+								<img src="images/travel_data_d3.gif" alt="Canada tourist data visualization demo" loading="lazy" width="800" height="450" />
+							</a>
+						</div>
+						<div><a href="https://d3-canada-tourist2025.vercel.app/" target="_blank" rel="noopener">
+								<strong>Live Site</strong></a></div>
+						<div>
+							<a href="https://github.com/DevNeoLee/D3_CanadaTourist2025" target="_blank" rel="noopener">
+								<strong>GitHub Repository</strong></a>
+						</div>
+					</div>
+				</section>
 				<section>
 					<header>
 						<h3>Share Desk</h3>
@@ -165,28 +187,6 @@ A fully responsive, single-page e‑commerce application designed for premium mo
 				</section>
 				
 		
-
-				<section>
-					<header>
-						<h3>Travelers to Canada AI</h3>
-						<p class="paragraph">A fully interactive data visualization dashboard built with TypeScript, D3.js (v7), and Vite, designed to showcase 20 years of Canadian tourism statistics within a single, responsive web page. The app combines modern web standards—modular TypeScript architecture, CSS Grid and Flexbox, scalable SVG graphics—with *AI-powered chat so users can ask questions about the data and get answers even when offline.</p>
-
-<p>LLM and prompting are central to the experience: when online, the Groq API answers with rich, contextual responses; when *offline or as a fallback, a mini LLM runs entirely in the *browser using transformers.js (no server required, model cached after first load). Careful prompting—system instructions, dataset context injected by year/month, and routing of casual vs. data questions—ensures the assistant uses only the app’s filtered dataset for statistics and stays friendly for greetings and follow-ups. Technical highlights include advanced D3.js charting (threshold, linear, and square-root scales), real-time data filtering, and a maintainable codebase with strict linting and strong type safety.</p>
-	</header>
-					<div class="content">
-						<div class="project-image">
-							<a href="https://d3-canada-tourist2025.vercel.app" target="_blank" rel="noopener">
-								<img src="images/travel_data_d3.gif" alt="Canada tourist data visualization demo" loading="lazy" width="800" height="450" />
-							</a>
-						</div>
-						<div><a href="https://d3-canada-tourist2025.vercel.app/" target="_blank" rel="noopener">
-								<strong>Live Site</strong></a></div>
-						<div>
-							<a href="https://github.com/DevNeoLee/D3_CanadaTourist2025" target="_blank" rel="noopener">
-								<strong>GitHub Repository</strong></a>
-						</div>
-					</div>
-				</section>
 			</div>
 		</section>
 
